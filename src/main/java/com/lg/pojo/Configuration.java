@@ -20,6 +20,9 @@ public class Configuration {
 
     private DataSource dataSource;
 
+    /**
+     * key : statementId  value:封装好的MapperStatement对象
+     */
     private Map<String,MapperStatement> mapperStatementMap = new HashMap();
 
 }

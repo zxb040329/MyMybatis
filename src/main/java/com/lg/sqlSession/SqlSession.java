@@ -1,5 +1,6 @@
 package com.lg.sqlSession;
 
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -14,7 +15,7 @@ public interface SqlSession {
      * @param <E>
      * @return
      */
-    <E> List<E> selectList(String statementId,Object...params);
+    <E> List<E> selectList(String statementId,Object...params) throws SQLException, ClassNotFoundException;
 
     /**
      * 查询单个
@@ -23,7 +24,7 @@ public interface SqlSession {
      * @param <T>
      * @return
      */
-    <T> T selectOne(String statementId,Object...params);
+    <T> T selectOne(String statementId,Object...params) throws SQLException, ClassNotFoundException;
 
     /**
      * 为dao接口生成代理实现类

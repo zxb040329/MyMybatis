@@ -2,6 +2,7 @@ package com.lg.sqlSession;
 
 import com.lg.config.XMLConfigBuilder;
 import com.lg.pojo.Configuration;
+import com.lg.sqlSession.impl.DefaultSqlSessionFactory;
 import org.dom4j.DocumentException;
 
 import java.beans.PropertyVetoException;

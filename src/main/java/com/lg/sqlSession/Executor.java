@@ -3,6 +3,7 @@ package com.lg.sqlSession;
 import com.lg.pojo.Configuration;
 import com.lg.pojo.MapperStatement;
 
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -11,6 +12,6 @@ import java.util.List;
  **/
 public interface Executor{
 
-    <E> List<E> query(Configuration configuration, MapperStatement mapperStatement,Object...params);
+    <E> List<E> query(Configuration configuration, MapperStatement mapperStatement,Object...params) throws SQLException, ClassNotFoundException;
 
 }
